@@ -21,8 +21,20 @@
 
 orders = [
     ("Charlie", "Guitar", 1),
-    ("Claire", "Camera", 1)
-    ("Alice", "Laptop", 1)
-    ("James", "Book", 3)
-    ("")
+    ("Claire", "Camera", 1),
+    ("Aaron", "Laptop", 1),
+    ("James", "Book", 3),
+    ("Juliet", "Book", 7)
 ]
+
+def print_orders(orders):
+    for index, order in enumerate(orders, +1):
+        name, item_ordered, quantity_order = order
+        print(f"\nOrder number: {index}: ")
+        print(f"Customer name: {name}")
+        print(f"Item ordered: {item_ordered}")
+        print(f"Quantity: {quantity_order}")
+
+
+
+print_orders(orders)
